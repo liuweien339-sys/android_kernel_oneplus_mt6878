@@ -104,7 +104,7 @@ Thanks:
 
 ReSukiSU - @ReSukiSU
 
-susfs4ksu- @simonpunk (SuSFS) 
+susfs4ksu- @simonpunk
 
 DroidSpaces - @ravindu644
 
