@@ -94,7 +94,7 @@ defconfig
 
 6. Compile Kernel
 ```
-make -j$(nproc) Image 2>&1 | tee ${GITHUB_WORKSPACE}/build.log
+make -j$(nproc) Image 2>&1 | tee ~/build.log
 ```
 
 Image will execute in arch/arm64/boot/Image
