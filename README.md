@@ -64,10 +64,10 @@ curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup
 ```
 git clone https://gitlab.com/simonpunk/susfs4ksu.git -b gki-android14-6.1 --depth=1 susfs
               cd susfs
-              cp kernel_patches/50_add_susfs_in_gki-android14-6.1.patch ~/mt6878
-              cp kernel_patches/fs/* ~/mt6878/fs
-              cp kernel_patches/include/linux/* ~/mt6878/include/linux/
-              cd ~/mt6878
+              cp kernel_patches/50_add_susfs_in_gki-android14-6.1.patch ~/kernel
+              cp kernel_patches/fs/* ~/kernel/fs
+              cp kernel_patches/include/linux/* ~/kernel/include/linux/
+              cd ~/kernel
               patch -p1 < 50_add_susfs_in_gki-android14-6.1.patch
               
 ```
