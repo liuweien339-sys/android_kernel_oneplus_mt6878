@@ -89,7 +89,7 @@ export PATH="${GITHUB_WORKSPACE}/toolchains/clang-r487747c/bin:$PATH"
 
 ```
 make device_build_
-_defconfig
+defconfig
 ```
 
 6. Compile Kernel
