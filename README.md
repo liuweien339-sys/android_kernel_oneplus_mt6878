@@ -23,8 +23,6 @@ Build Steps:
 
 Host Ubuntu24.04
 
-Clang r487747c
-
 1.Clone Kernel source
 ```
 git clone https://github.com/liuweien339-sys/android_kernel_oneplus_mt6878 kernel
@@ -64,14 +62,14 @@ curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup
 ```
 
 ```
-git clone https://gitlab.com/simonpunk/susfs4ksu/ -b gki-android14-6.1 --depth=1 susfs
-              cp susfs/kernel_patches/50_enable_susfs_for_ksu.patch KernelSU/
-              cd KernelSU
-              patch -p1 < 50_enable_susfs_for_ksu.patch 
-              cd ../
-              patch -p1 < susfs/kernel_patches/50_add_susfs_in_gki-android14-6.1.patch
-              cp susfs/kernel_patches/fs/* fs/
-              cp susfs/kernel_patches/include/linux/* include/linux/
+git clone https://gitlab.com/simonpunk/susfs4ksu.git -b gki-android14-6.1 --depth=1 susfs
+              cd susfs
+              cp kernel_patches/50_add_susfs_in_gki-android14-6.1.patch ~/mt6878
+              cp kernel_patches/fs/* ~/mt6878/fs
+              cp kernel_patches/include/linux/* ~/mt6878/include/linux/
+              cd ~/mt6878
+              patch -p1 < 50_add_susfs_in_gki-android14-6.1.patch
+              
 ```
 
 ```
