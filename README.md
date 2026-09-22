@@ -79,7 +79,7 @@ patch -p1 < ds.patch
 
 5.Make config and export path
 ```
-export PATH="${GITHUB_WORKSPACE}/toolchains/clang-r487747c/bin:$PATH"
+export PATH="~/toolchains/clang-r487747c/bin:$PATH"
           export ARCH=arm64
           export SUBARCH=arm64
           export LLVM=1
