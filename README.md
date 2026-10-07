@@ -41,12 +41,6 @@ cp -r ~/modules/kernel ~/
 sudo apt install libssl-dev libelf-dev libdw-dev build-essential dwarves gcc-aarch64-linux-gnu linux-tools-common 
 ```
 
-cd kernel source
-
-```
-cd kernel
-```
-
 3.Install Toolchain
 ```
 curl -LO https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android14-qpr3-release/clang-r487747c.tar.gz
@@ -54,6 +48,12 @@ curl -LO https://android.googlesource.com/platform/prebuilts/clang/host/linux-x8
               mkdir -p toolchains/clang-r487747c
           
               tar -xf "clang-r487747c.tar.gz" -C "toolchains/clang-r487747c"
+```
+
+cd kernel source
+
+```
+cd kernel
 ```
 
 4.Integrate BakaSU SuSFS DS patch
