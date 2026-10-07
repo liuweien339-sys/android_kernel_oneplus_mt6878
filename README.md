@@ -56,9 +56,9 @@ curl -LO https://android.googlesource.com/platform/prebuilts/clang/host/linux-x8
               tar -xf "clang-r487747c.tar.gz" -C "toolchains/clang-r487747c"
 ```
 
-4.Integrate ReSukiSU SuSFS DS patch
+4.Integrate BakaSU SuSFS DS patch
 ```
-curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash
+curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash
 ```
 
 ```
