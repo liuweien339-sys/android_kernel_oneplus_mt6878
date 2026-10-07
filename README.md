@@ -102,7 +102,7 @@ Image will execute in arch/arm64/boot/Image
 -------
 Thanks:
 
-ReSukiSU - @ReSukiSU
+BakaSU - @BakaSU
 
 susfs4ksu- @simonpunk
 
