@@ -1,4 +1,4 @@
-SuSFS Kernel for OnePlusTurbo6X
+BakaSU-SuSFS Kernel for OnePlusTurbo6X
 -------
 Installation steps:
 
@@ -56,7 +56,7 @@ cd kernel source
 cd kernel
 ```
 
-4.Integrate BakaSU SuSFS DS patch
+4.Integrate BakaSU SuSFS DroidSpaces patch
 ```
 curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash
 ```
