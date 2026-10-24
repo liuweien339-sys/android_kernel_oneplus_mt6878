@@ -3041,6 +3041,9 @@ static int do_new_mount_fc(struct fs_context *fc, struct path *mountpoint,
 	unlock_mount(mp);
 	if (error < 0)
 		mntput(mnt);
+   } else {
+		trace_android_vh_do_new_mount_fc(mountpoint, mnt);
+ 
 	return error;
 }
 
