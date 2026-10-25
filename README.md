@@ -10,7 +10,7 @@ Installation steps:
 
 -------
 
-kernel is 6.1.157 OnePlus kernel base you can boot this at ColorOS16(releases kernel will test on real phone)
+kernel is 6.1.134 OnePlus kernel base you can boot this at ColorOS16(releases kernel will test on real phone)
 
 -------
 Kernel Integrated:
