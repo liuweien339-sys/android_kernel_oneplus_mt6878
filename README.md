@@ -56,9 +56,17 @@ cd kernel source
 cd kernel
 ```
 
-4.Integrate BakaSU SuSFS DroidSpaces patch
+4.Integrate BakaSU SuSFS DroidSpaces patch and NoMount
 ```
 curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash
+```
+
+```
+git clone https://github.com/maxsteeel/nomount/ --depth=1
+mkdir ~/mt6878/fs/nomount
+cp ~/nomount/kernel/src/* ~/mt6878/fs/nomount
+cd ~/mt6878/
+bash ~/nomount/kernel/setup.sh 
 ```
 
 ```
