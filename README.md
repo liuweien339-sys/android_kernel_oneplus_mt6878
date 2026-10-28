@@ -10,7 +10,7 @@ Installation steps:
 
 -------
 
-kernel is 6.1.134 OnePlus kernel base you can boot this at ColorOS16(releases kernel will test on real phone)
+kernel version 6.1.157 OnePlus kernel base this kernel for ColorOS16(released kernel will test on real phone)
 
 -------
 Kernel Integrated:
@@ -19,7 +19,7 @@ DroidSpaces and SuSFS
 
 -------
 
-Build Steps:
+Kernel Build Steps(Example):
 
 Host Ubuntu24.04
 
@@ -89,7 +89,7 @@ export PATH="~/toolchains/clang-r487747c/bin:$PATH"
 
 ```
 make device_build_
-defconfig
+defconfig addon.config
 ```
 
 6. Compile Kernel
