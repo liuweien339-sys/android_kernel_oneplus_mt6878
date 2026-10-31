@@ -15,7 +15,7 @@ kernel version 6.1.157 OnePlus kernel base this kernel for ColorOS16(released ke
 -------
 Kernel Integrated:
 
-DroidSpaces ＆ BakaSU-SuSFS ＆ NoMount
+DroidSpaces BakaSU-SuSFS NoMount BaseBandGuard
 
 -------
 
@@ -56,7 +56,7 @@ cd kernel source
 cd kernel
 ```
 
-4.Integrate BakaSU SuSFS DroidSpaces patch and NoMount
+4.Integrate BakaSU SuSFS DroidSpaces patch and NoMount and Baseband-guard
 ```
 curl -LSs "https://raw.githubusercontent.com/Baka-SU/BakaSU/main/kernel/setup.sh" | bash
 ```
@@ -85,6 +85,14 @@ curl -Lo ds.patch https://raw.githubusercontent.com/ravindu644/Droidspaces-OSS/r
 patch -p1 < ds.patch 
 ```
 
+```
+sed -i '/^config LSM$/,/^help$/{ /^[[:space:]]*default/ { /baseband_guard/! s/selinux/selinux,baseband_guard/ } }' security/Kconfig
+```
+
+```
+            wget -O- https://github.com/vc-teahouse/Baseband-guard/raw/main/setup.sh | bash
+```
+  
 5.Make config and export path
 ```
 export PATH="~/toolchains/clang-r487747c/bin:$PATH"
@@ -117,5 +125,7 @@ susfs4ksu- @simonpunk
 DroidSpaces - @ravindu644
 
 NoMount @maxsteeel
+
+Baseband-guard @vc-teahouse
 
 -------
