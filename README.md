@@ -18,10 +18,11 @@ Kernel Integrated:
 DroidSpaces BakaSU-SuSFS NoMount BaseBandGuard
 
 -------
-
 Kernel Build Steps(Example):
 
 Host Ubuntu24.04
+
+WARN: You also can goto WeienKernel-Builder and fork and running workflow for t6xmain
 
 1.Clone Kernel source
 ```
